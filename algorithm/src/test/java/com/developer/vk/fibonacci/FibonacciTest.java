@@ -39,12 +39,12 @@ public class FibonacciTest {
 
     @Test
     public void testFibonacciUsingLoopForZero() {
-        Assert.assertEquals("0", fib.fibonacciUsingLoop(0));
+        Assert.assertEquals("0, ", fib.getFibonacciSeries(0));
     }
 
     @Test
     public void testFibonacciUsingLoopForOne() {
-        Assert.assertEquals("0,1", fib.fibonacciUsingLoop(1));
+        System.out.println(fib.getFibonacciSeries(10));
     }
 
 }

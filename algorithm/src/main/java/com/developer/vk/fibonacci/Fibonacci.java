@@ -14,8 +14,12 @@ public class Fibonacci {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-    public String fibonacciUsingLoop(int n) {
+    public String getFibonacciSeries(int n) {
         String result = "";
+
+        for(int i = 0; i <= n; i++) {
+            result = result + fibonacci(i) + ", ";
+        }
 
         return result;
     }
